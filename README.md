@@ -15,7 +15,7 @@ Unlike traditional games built with software engines, the NAVEEDIA Racing Car is
 - LFSR Randomization: A Linear Feedback Shift Register (LFSR) provides pseudo-random obstacle spawning across 5 distinct lanes to eliminate "safe zones."
 
 - Hardware Interfacing: * Quadrature Decoder: Processes pulses from a rotary encoder for high-precision steering.
-
+    --Challenges: the rate at which FPGA recives data and encoder motor sends data differs significantly, as a result this produces jitter in the VGA output. To reduce the jitter, add pulldown resistors and clock delay for accessing the motor's data.
 - IR Sensors: Used for analog-style pedal input (Gas/Brake).
 
 - Debounced Input: All physical switches and buttons are synchronized and debounced to prevent metastability.
