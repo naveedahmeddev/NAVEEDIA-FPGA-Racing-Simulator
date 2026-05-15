@@ -41,7 +41,7 @@ Unlike traditional games built with software engines, the NAVEEDIA Racing Car is
 👥 The Team
 Naveed Ahmed - Lead Logic Design & System Architecture
 
-Muhammad Zain Ul Abideen - Graphics Engine & BRAM Integration
+Muhammad Zain Ul Abideen @muhammad0727 - Graphics Engine & BRAM Integration
 
 Syed Muhammad Hani Ali  - Hardware Interfacing & Sensor Logic
 
