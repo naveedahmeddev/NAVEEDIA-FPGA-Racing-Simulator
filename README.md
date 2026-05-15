@@ -2,6 +2,7 @@
 A real-time, hardware-accelerated 3D racing game developed from scratch using Verilog HDL on the Digilent Basys 3 (Artix-7) FPGA. This project was developed as a final semester project for the Digital Logic Design (DLD) course.
 
 🏎️ **Project Overview**
+
 Unlike traditional games built with software engines, the NAVEEDIA Racing Car is engineered entirely at the gate level. There is no Operating System or CPU involvement; every pixel, collision, and movement is calculated in real-time by dedicated hardware logic running at 25 MHz.
 
 **Key Technical Features:**
