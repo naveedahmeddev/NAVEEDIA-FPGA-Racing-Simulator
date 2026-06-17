@@ -1,0 +1,58 @@
+========================================================================================
+     EXTERNAL SIMULATOR PERIPHERALS                     BASYS 3 FPGA BOARD INTERFACE
+========================================================================================
+
+ [ ROTARY STEERING ENCODER ]
+  (Pmod JA Header)
+   +-----------------------+                             (Internal FPGA Configuration)
+   | 3.3V VCC              | ------------> Pin 6 (VCC)
+   | Ground (GND)          | ------------> Pin 5 (GND)
+   | Phase A / DT          | ------------> Pin 1 [J1]  <--- [Internal 10kΩ PULLUP]
+   | Phase B / CLK         | ------------> Pin 2 [L2]  <--- [Internal 10kΩ PULLUP]
+   +-----------------------+
+
+
+ [ PEDAL IR OPTICAL SENSORS ]
+  (Pmod JB Header - Active Low)
+   +-----------------------+
+   | 3.3V VCC              | ------------> Pin 6 (VCC)
+   | Ground (GND)          | ------------> Pin 5 (GND)
+   | Gas Sensor Signal     | ------------> Pin 1 [A14]
+   | Brake Sensor Signal   | ------------> Pin 2 [A16]
+   +-----------------------+
+
+
+ [ 6-SPEED PUSH-BUTTON GEARBOX ]
+  (Pmod JC Header)
+   +-----------------------+                             (Internal FPGA Configuration)
+   | Gear 1 Button         | ------------> Pin 1 [K17] <--- [Internal 10kΩ PULLDOWN]
+   | Gear 2 Button         | ------------> Pin 2 [M18] <--- [Internal 10kΩ PULLDOWN]
+   | Gear 3 Button         | ------------> Pin 3 [N17] <--- [Internal 10kΩ PULLDOWN]
+   | Gear 4 Button         | ------------> Pin 4 [P18] <--- [Internal 10kΩ PULLDOWN]
+   | Gear 5 Button         | ------------> Pin 7 [L17] <--- [Internal 10kΩ PULLDOWN]
+   | Reverse Gear Button   | ------------> Pin 8 [M19] <--- [Internal 10kΩ PULLDOWN]
+   | Common VCC Bus (3.3V) | <------------ Pin 6 (VCC)
+   +-----------------------+
+
+
+ [ ANALOG VGA MONITOR CONNECTOR ]
+  (On-Board Resistor Ladders)
+   +-----------------------+
+   | RED Channel [3:0]     | <------------ Pins [G19, H19, J19, N19] (MSB to LSB)
+   | GREEN Channel [3:0]   | <------------ Pins [N18, L18, K18, J18] (MSB to LSB)
+   | BLUE Channel [3:0]    | <------------ Pins [J17, H17, G17, D17] (MSB to LSB)
+   | Horizontal Sync       | <------------ Pin  [P19]
+   | Vertical Sync         | <------------ Pin  [R19]
+   +-----------------------+
+
+
+ [ ON-BOARD BACKUP OVERRIDES ]
+  (Hardwired System Architecture)
+   +-----------------------+
+   | 100MHz Oscillator     | ------------> Pin  [W5]   (Divided to 25MHz Pixel Clock)
+   | Center Push Button    | ------------> Pin  [U18]  (System Global Reset)
+   | Upper Push Button     | ------------> Pin  [W19]  (Manual Gas Backup)
+   | Lower Push Button     | ------------> Pin  [T17]  (Manual Brake Backup)
+   +-----------------------+
+
+========================================================================================
